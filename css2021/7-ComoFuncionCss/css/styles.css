@@ -1,0 +1,60 @@
+/* 
+Como funciona CSS
+Es un lenguaje de estilos que nos permite darle estilos a nuestros documentos HTML
+Especificidad -> Establece como de especifico es un selector para saber que estilo aplicar.
+El calculo se realiza con la siguiente formula
+Suma los valores de cada tipo de selector y el resultado es la especificidad del selector
+Elementos HTML = 1 punto
+Clases = 10 puntos
+ID = 100 puntos
+Inline styles = 1000 puntos
+!important -> Tiene preferencia sobre cualquier otro tipo de selector NO SE USA NUNCA (Bueno casi Nunca)!!!
+
+
+
+Cascaada -> Es el orden en el que se aplican los estilos, esto se puede modificar con el uso de !important  
+Cascada-> Funciona siempre que la especicifidad sobre el elemento sea la misma
+Herencia -> Es la propagacion de estilos de un elemento padre a un elemento hijo
+*/
+
+/* h1{
+    color: red;
+} */
+
+/* Link para comprobar que tan bueno es el css */
+/* https://jonassebastianohlsson.com/specificity-graph/ */
+
+
+/* HERENCIA */
+body{
+    background-color: #333;
+}
+.title{
+    color: cyan;
+    font-size: 10px;
+}
+
+.text{
+    color: green;
+    font-size: 20px;
+}
+
+/* Los enlaces no heredan del padre */
+/* .link{
+    color: green;
+} */
+
+.link{
+    color: inherit;
+}
+
+.list{
+    color: indianred
+}
+
+/* Ignora la herencia */
+.list-item-extra{
+    color: initial;
+}
+
+/* Estandarizar los estilos de los elementos */

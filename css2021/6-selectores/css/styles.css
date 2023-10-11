@@ -1,0 +1,131 @@
+/* Selectores */
+
+/* 
+    Selectores Simples
+        Selectores elementales
+            Selectores Universales->*
+            Selectores de tipo->Nombre de la etiqueta
+
+        Selectores de Atributos
+            id->id del elemento
+            clase-> clase del elemento
+            otros atributos
+                
+                [atributo]
+                [atributo="valor"]
+                [atributo^="valor"]
+                [atributo*="valor"]
+                [atributo$="valor"]
+                [atributo|="valor"]
+                
+    Selectores Compuestos
+        Selecotres Agrupados
+        Selectores Combinados
+            Selectores descendientes
+            Selectores heramno
+            Selector de hermanos siguientes ~
+        Selectores Pseudoclases
+
+*/
+
+/* *{
+    background-color: aqua;
+}
+
+h1{
+    color: red;
+}
+
+p{
+    color: blue;
+    background-color: lightgreen;
+} */
+
+/* sensitivo a mayusculas y minusculas
+Se recomienda en lowercase 
+No es recomendable dar estilos con ID
+Estilos deben ser reutilizables
+*/
+#title{
+    background-color: lightgreen;
+}
+
+/* No se tiene un limite de clases */
+
+.title{
+    background-color: lightblue;
+}
+
+.text{
+    background-color: lightcoral;
+}
+
+/* Selectores de atributo */
+
+[href]{
+    background-color: blueviolet;
+}
+
+[href="https://google.com"]{
+    background-color: mediumaquamarine;
+}
+
+/* Comprobar si el atirbuto empieza por ese valor */
+
+[href^=color]{
+    background-color: lightpink;
+}
+
+/* se seleccione el valor que coincicda sin importar el lugar en donde este */
+
+[href*="modo"]{
+    background-color: green;
+}
+
+/* Seleccionar si la palabra termina por esa palabra */
+
+[href$="rojo"]{
+    background-color: crimson;
+}
+
+/* Palabra y palabra con guion */
+[lang|="es"]{
+    background-color: magenta;
+}
+
+/* Selectores agrupados */
+
+.text-1, .text-2{
+    background-color: steelblue;
+}
+
+/* selector combinados */
+/* selector descendiente */
+
+
+div .title-2{
+    background-color: teal;
+}
+
+
+/* Ejemplo de NO buena practica */
+/* Se recomienda tener hasta un solo nivel hacia abajo */
+/* html body div .title-2{
+    background-color: yellow;
+} */
+
+/* selectores de hermanos */
+/* selecicona el hermano que esta inmediatamente despuee */
+.title-h + .parr-1{
+    background-color: tomato;
+}
+/* seleccionar todos los hermanos siguientes */
+.title-h ~ p{
+    background-color: teal;
+}
+
+/* selector hijo directo */
+
+.container > .title-c{
+    background-color: rgb(51, 73, 49);
+}

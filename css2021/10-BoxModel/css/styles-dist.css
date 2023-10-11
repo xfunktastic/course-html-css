@@ -1,0 +1,196 @@
+/* Consultar imagen del curso */
+
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+
+.block {
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    padding: 50px 20px 100px 70px;
+    margin-right: auto;
+    /*pegamos el elemento a la izquierda*/
+    margin-left: auto;
+    /*pegamos el elemento a la derecha*/
+}
+
+.p-border{
+    margin-left: 90px;
+    padding: 25px 50px;
+    border: 20px solid red;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    border-right-color: aqua;
+    /* border-style: none;
+    border-style: hidden;
+    border-style: dotted;
+    border-style: dashed;
+    border-style: double;
+    border-style: groove;
+    border-style: ridge;
+    border-style: inset;
+    border-style: outset; */
+}
+
+/* Elementos en linea no se puede dar alto y ancho */
+/* Solo se puede dar medidas a elementos de bloque */
+.inline {
+    background-color: lightcoral;
+    color: inherit;
+    margin-bottom: 100px;
+    /*No se puede margenes verticales*/
+    margin-right: 100px;
+    padding-left: 100px;
+}
+
+/* Propiedad Margin
+Margin es el espacio que hay entre un elemento y otro
+Es un shorthand property 
+Admite hasta 4 valores que se aplican en el siguiente orden
+top right bottom left
+Si solo se especifica un valor se aplica a los 4 lados
+Si se especifican 2 valores el primero se aplica a top y bottom y el segundo a right y left
+Si se especifican 3 valores el primero se aplica a top, el segundo a right y left y el tercero a bottom
+Si se especifican 4 valores se aplican en el orden establecido
+
+*/
+
+.title {
+    width: 300px;
+    margin-left: auto;
+    background-color: aqua;
+}
+
+/* 
+Padding es el espacio que hay entre el contenido y el borde
+Admite hasta 4 valores que se aplican en el siguiente orden
+top right bottom left
+Si solo se especifica un valor se aplica a los 4 lados
+Si se especifican 2 valores el primero se aplica a top y bottom y el segundo a right y left
+Si se especifican 3 valores el primero se aplica a top, el segundo a right y left y el tercero a bottom
+Si se especifican 4 valores se aplican en el orden establecido
+
+
+*/
+
+/* 
+Propiedad border es la propiedad que nos permite darle un borde a un elemento
+Es un shorthand property que admite hasta 3 valores que se aplican en el siguiente orden
+width style color
+Si solo se especifica un valor se aplica a los 4 lados
+Si se especifican 2 valores el primero se aplica a top y bottom y el segundo a right y left
+Si se especifican 3 valores el primero se aplica a top, el segundo a right y left y el tercero a bottom
+Si se especifican 4 valores se aplican en el orden establecido
+
+
+*/
+
+/* 
+Box sizing es la propiedad que nos permite especificar si el ancho y alto de un elemento incluye el padding y el border
+Por defecto el valor es content-box
+Si se especifica border-box el ancho y alto del elemento incluye el padding y el border
+Los dos valores que admite son content-box y border-box
+
+*/
+
+.d-parr{
+    background-color: lightcyan;
+    color: #333;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 20px solid red;
+    /* border-radius: 50px; */
+    /* border-top-left-radius: 50px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 200px; */
+    /* border-radius: 50px 100px 150px 200px; */
+    /* border-radius: 50px / 100px; */
+    border-radius: 50px 100px 150px / 100px 150px 200px;
+
+}
+
+/*
+Border radius es la propiedad que nos permite darle un radio a las esquinas de un elemento
+Admite hasta 4 valores que se aplican en el siguiente orden
+top-left top-right bottom-right bottom-left
+Si solo se especifica un valor se aplica a los 4 lados
+Si se especifican 2 valores el primero se aplica a top y bottom y el segundo a right y left
+Si se especifican 3 valores el primero se aplica a top, el segundo a right y left y el tercero a bottom
+Si se especifican 4 valores se aplican en el orden establecido
+
+*/
+
+/* Desbordamiento */
+/* 
+Overflow es la propiedad que nos permite especificar que hacer cuando el contenido de un elemento es mayor que el tamaño del elemento
+Los valores que admite son
+visible: el contenido se muestra fuera del elemento
+hidden: el contenido que se sale del elemento se oculta
+scroll: se muestra una barra de desplazamiento para poder ver el contenido que se sale del elemento
+auto: se muestra una barra de desplazamiento solo si es necesario
+*/
+
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: lightcyan;
+    width: 300px;
+    height: 100px;
+    /* overflow-y: hidden; */
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+    overflow: auto;
+    border-radius: 90px;
+}
+
+.text-b{
+    width: 600px;
+    color: #333;
+    padding: 15px;
+    background-color: lightcoral;
+    margin: 0;
+    overflow: hidden;
+}
+
+.header{
+    background-color: lightcoral;
+    height: 100px;
+    margin-bottom: 20px;
+    /* overflow: hidden; */
+    /* padding-top: 0.1px; */
+    /* border-top: 0.1px solid lightcoral */
+}
+
+.box-1, .box-2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: lightcyan;
+    width: 300px;
+    height: 300px;
+}
+
+.box-1{
+    margin-bottom: 20px;
+}
+/* 
+Los margenes verticales colapsan 
+
+*/
+
+.title-box{
+    margin-top: 0;
+    margin-top: 50px;
+}
